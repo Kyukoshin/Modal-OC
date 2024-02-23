@@ -1,6 +1,6 @@
 {
   "name": "modal-example-kyu",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple modular modal element made with create-react-library",
   "keywords": ["modal", "component", "node.js", "package"],
   "author": "Kyukoshin",
