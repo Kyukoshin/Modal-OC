@@ -1,26 +1,29 @@
 # modal-example
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/modal-example.svg)](https://www.npmjs.com/package/modal-example) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> Simple modular modal element
+> Node 10.0 minimum required
 
 ## Install
 
 ```bash
-npm install --save modal-example
+npm i modal-example-kyu
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'modal-example'
-import 'modal-example/dist/index.css'
+import { Component } from 'modal-example-kyu'
+import '../node_modules/modal-example-kyu/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return 
+    <div>
+    <MyComponent isOpen={function} onClose={function}/>
+        //Title goes Here
+        //Content goes here
+    <MyComponent/>
+    </div>
   }
 }
 ```

@@ -1,6 +1,17 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React from 'react';
+import './index.module.css';
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+const Modal = ({ isOpen, onClose, children }) => {
+  return (
+    isOpen && (
+      <div className="modalOverlay" onClick={onClose}>
+        <div className="modalContent" onClick={(e) => e.stopPropagation()}>
+          <span className="closeBtn" onClick={onClose}>&times;</span>
+          {children}
+        </div>
+      </div>
+    )
+  );
+};
+
+export default Modal;
